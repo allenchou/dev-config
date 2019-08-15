@@ -1,0 +1,10 @@
+# JetBrains IDE files
+.ideal
+
+# termporary vim files
+*~
+*.swp
+*.swo
+
+# large binary files
+*.pdf
