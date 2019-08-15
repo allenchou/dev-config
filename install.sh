@@ -7,3 +7,6 @@ ln -sf $REPO_DIR/.vimrc ~/.vimrc
 
 # zshrc 
 ln -sf $REPO_DIR/.zshrc ~/.zshrc
+
+# tmux
+ln -sf $REPO_DIR/.tmux ~/.tmux
