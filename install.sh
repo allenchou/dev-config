@@ -9,4 +9,4 @@ ln -sf $REPO_DIR/.vimrc ~/.vimrc
 ln -sf $REPO_DIR/.zshrc ~/.zshrc
 
 # tmux
-ln -sf $REPO_DIR/.tmux ~/.tmux
+ln -sf $REPO_DIR/.tmux.conf.local ~/.tmux.conf.local
