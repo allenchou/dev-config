@@ -97,11 +97,16 @@ let g:tex_flavor='latex'
 """"""""""""
 " NERDTree "
 """"""""""""
-"noremap <silent> <F10> :NERDTreeToggle<CR>
-"noremap! <silent> <F10> :NERDTreeToggle<CR>
-"let g:NERDTreeIgnore=['\.pyc$', '\.o$']
-"automatically open a NERDTree when vim starts up
-"autocmd vimenter * NERDTree 
+noremap <silent> <C-n> :NERDTreeToggle<CR>
+noremap! <silent> <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeIgnore=['\.pyc$', '\.o$']
+" automatically open a NERDTree when vim starts up
+autocmd vimenter * NERDTree
+" Go to previous (last accessed) window.
+autocmd VimEnter * wincmd p
+" Quit if NERDTree is last and only buffer
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 
 """""""""""""""
 " delimitMate "
